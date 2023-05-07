@@ -1,0 +1,9 @@
+<h2>Integration Best Practices</h2>
+<ul class="intbps">
+  <li *ngFor="let intbp of intbps$ | async" [class.selected]="intbp.id === selectedId">
+    <a [routerLink]="['/intbp', intbp.id]">
+      <span class="badge">{{ intbp.id }}</span>{{ intbp.name }}
+    </a>
+  </li>
+</ul>
+

@@ -1,0 +1,53 @@
+/* HeroListComponent's private CSS styles */
+.intbps {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+.intbps li {
+  position: relative;
+  cursor: pointer;
+}
+
+.intbps li:hover {
+  left: .1em;
+}
+
+.intbps a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
+  background-color: #eee;
+  margin: .5rem .5rem .5rem 0;
+  padding: .5rem 0;
+  border-radius: 4px;
+}
+
+.intbps a:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+}
+
+.intbps a:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+
+.intbps .selected a {
+  background-color: #d6e6f7;
+}
+
+.intbps .selected a:hover {
+  background-color: #bdd7f5;
+}
+
+.intbps .badge {
+  padding: .5em .6em;
+  color: white;
+  background-color: chocolate;
+  min-width: 16px;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}

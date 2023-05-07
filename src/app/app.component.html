@@ -1,0 +1,29 @@
+<div class="wrapper">
+	<h1 class="title">Actionable Review</h1>
+  <p>
+	As an IT professional, we must always be learning new things but more importantly not losing sight of
+	what we have already learned. This application provides an actionable review of the tenets of quality,
+	security, best practices, patterns, and common reference.
+  </p>
+  <nav>
+    <a routerLink="/crisis-center" routerLinkActive="active" ariaCurrentWhenActive="page">Crisis Center</a>
+    <a routerLink="/superheroes" routerLinkActive="active" ariaCurrentWhenActive="page">Heroes</a>
+    <a routerLink="/meds" routerLinkActive="active" ariaCurrentWhenActive="page">Meds</a>
+    <a routerLink="/contacts" routerLinkActive="active" ariaCurrentWhenActive="page">Contacts</a>
+    <a routerLink="/apibp" routerLinkActive="active" ariaCurrentWhenActive="page">API BP</a>
+    <a routerLink="/intbps" routerLinkActive="active" ariaCurrentWhenActive="page">Integration BP</a>
+    <a routerLink="/infrabp" routerLinkActive="active" ariaCurrentWhenActive="page">Infrastructure BP</a>
+    <a routerLink="/qabp" routerLinkActive="active" ariaCurrentWhenActive="page">Quality BP</a>
+    <a routerLink="/secbp" routerLinkActive="active" ariaCurrentWhenActive="page">Security BP</a>
+    <a routerLink="/eapat" routerLinkActive="active" ariaCurrentWhenActive="page">Enterprise PAT</a>
+    <a routerLink="/intpat" routerLinkActive="active" ariaCurrentWhenActive="page">Integration PAT</a>
+    <a routerLink="/skus" routerLinkActive="active" ariaCurrentWhenActive="page">Skus</a>
+    <a routerLink="/admin" routerLinkActive="active" ariaCurrentWhenActive="page">Admin</a>
+    <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+    <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
+  </nav>
+  <div [@routeAnimation]="getRouteAnimationData()">
+    <router-outlet></router-outlet>
+  </div>
+  <router-outlet name="popup"></router-outlet>
+</div>

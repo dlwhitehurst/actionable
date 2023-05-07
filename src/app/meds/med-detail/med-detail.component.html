@@ -1,0 +1,8 @@
+<h2>Meds</h2>
+<div *ngIf="med$ | async as med">
+  <h3>{{ med.name }}</h3>
+  <p>Id: {{ med.id }}</p>
+  <label for="med-name">Med name: </label>
+  <input type="text" id="med-name" [(ngModel)]="med.name" placeholder="name"/>
+  <button type="button" (click)="gotoMeds(med)">Back</button>
+</div>
