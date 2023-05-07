@@ -4,28 +4,28 @@ import { switchMap } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { IntbpService } from '../intbp.service';
-import { Intbp } from '../intbp';
+import { ApibpService } from '../apibp.service';
+import { Apibp } from '../apibp';
 
 @Component({
   selector: 'app-apibp-list',
-  templateUrl: './intbp-list.component.html',
-  styleUrls: ['./intbp-list.component.css']
+  templateUrl: './apibp-list.component.html',
+  styleUrls: ['./apibp-list.component.css']
 })
-export class IntbpListComponent implements OnInit {
-  intbps$!: Observable<Intbp[]>;
+export class ApibpListComponent implements OnInit {
+  apibps$!: Observable<Apibp[]>;
   selectedId = 0;
 
   constructor(
-    private service: IntbpService,
+    private service: ApibpService,
     private route: ActivatedRoute
   ) {}
 
   ngOnInit() {
-    this.intbps$ = this.route.paramMap.pipe(
+    this.apibps$ = this.route.paramMap.pipe(
       switchMap(params => {
         this.selectedId = parseInt(params.get('id')!, 10);
-        return this.service.getIntbps();
+        return this.service.getApibps();
       })
     );
   }

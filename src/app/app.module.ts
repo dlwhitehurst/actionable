@@ -14,6 +14,7 @@ import { HeroesModule } from './heroes/heroes.module';
 import { MedsModule } from './meds/meds.module';
 import { ContactsModule } from './contacts/contacts.module';
 import { IntbpsModule } from './intbps/intbps.module';
+import { ApibpsModule } from './apibps/apibps.module';
 import { SkusModule } from './skus/skus.module';
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     MedsModule,
     ContactsModule,
     IntbpsModule,
+    ApibpsModule,
     SkusModule,
     AuthModule,
     AppRoutingModule,

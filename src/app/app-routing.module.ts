@@ -39,6 +39,11 @@ const appRoutes: Routes = [
     data: { preload: true }
   },
   {
+    path: 'apibps',
+    loadChildren: () => import('./apibps/apibps.module').then(m => m.ApibpsModule),
+    data: { preload: true }
+  },
+  {
     path: 'skus',
     loadChildren: () => import('./skus/skus.module').then(m => m.SkusModule),
     data: { preload: true }

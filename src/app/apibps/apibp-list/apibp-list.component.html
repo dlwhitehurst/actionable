@@ -1,0 +1,9 @@
+<h2>API Best Practices</h2>
+<ul class="apibps">
+  <li *ngFor="let apibp of apibps$ | async" [class.selected]="apibp.id === selectedId">
+    <a [routerLink]="['/apibp', apibp.id]">
+      <span class="badge">{{ apibp.id }}</span>{{ apibp.name }}
+    </a>
+  </li>
+</ul>
+
