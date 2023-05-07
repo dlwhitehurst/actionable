@@ -7,7 +7,7 @@ import {Apibp} from '../apibp';
 import {ApibpService} from '../apibp.service';
 
 @Component({
-  selector: 'app-apibp-detail',
+  selector: 'app-infrabp-detail',
   templateUrl: './apibp-detail.component.html',
   styleUrls: ['./apibp-detail.component.css']
 })

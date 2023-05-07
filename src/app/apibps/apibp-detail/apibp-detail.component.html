@@ -4,8 +4,8 @@
   <p>Id: {{ apibp.id }}</p>
   <label for="apibp-name">Name: </label>
   <input type="text" id="apibp-name" [(ngModel)]="apibp.name" placeholder="name"/>
-  <label for="apibp-desc">Description: </label>
-  <input type="hidden" ng-model="apibp.description">
+  <!--label for="apibp-description">Description: </label-->
+  <!-- input type="hidden" ng-model="apibp.description"-->
   <p> {{ apibp.description }} </p>
   <button type="button" (click)="gotoApibps(apibp)">Back</button>
 </div>

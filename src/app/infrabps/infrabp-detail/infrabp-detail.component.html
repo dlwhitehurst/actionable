@@ -1,0 +1,11 @@
+<h2>Infrastructure Best Practices</h2>
+<div *ngIf="infrabp$ | async as infrabp">
+  <h3>{{ infrabp.name }}</h3>
+  <p>Id: {{ infrabp.id }}</p>
+  <label for="infrabp-name">Name: </label>
+  <input type="text" id="infrabp-name" [(ngModel)]="infrabp.name" placeholder="name"/>
+  <!--label for="infrabp-description">Description: </label-->
+  <!-- input type="hidden" ng-model="infrabp.description"-->
+  <p> {{ infrabp.description }} </p>
+  <button type="button" (click)="gotoInfrabps(infrabp)">Back</button>
+</div>

@@ -1,0 +1,9 @@
+<h2>Infrastructure Best Practices</h2>
+<ul class="infrabps">
+  <li *ngFor="let infrabp of infrabps$ | async" [class.selected]="infrabp.id === selectedId">
+    <a [routerLink]="['/infrabp', infrabp.id]">
+      <span class="badge">{{ infrabp.id }}</span>{{ infrabp.name }}
+    </a>
+  </li>
+</ul>
+

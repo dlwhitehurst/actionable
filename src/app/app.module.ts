@@ -11,10 +11,9 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
 
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes/heroes.module';
-import { MedsModule } from './meds/meds.module';
-import { ContactsModule } from './contacts/contacts.module';
 import { IntbpsModule } from './intbps/intbps.module';
 import { ApibpsModule } from './apibps/apibps.module';
+import { InfrabpsModule } from './infrabps/infrabps.module';
 import { SkusModule } from './skus/skus.module';
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -26,10 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     FormsModule,
     HeroesModule,
-    MedsModule,
-    ContactsModule,
     IntbpsModule,
     ApibpsModule,
+    InfrabpsModule,
     SkusModule,
     AuthModule,
     AppRoutingModule,

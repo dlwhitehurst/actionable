@@ -8,7 +8,7 @@ import { IntbpService } from '../intbp.service';
 import { Intbp } from '../intbp';
 
 @Component({
-  selector: 'app-apibp-list',
+  selector: 'app-infrabp-list',
   templateUrl: './intbp-list.component.html',
   styleUrls: ['./intbp-list.component.css']
 })

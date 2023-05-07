@@ -4,28 +4,28 @@ import { switchMap } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { MedService } from '../med.service';
-import { Med } from '../med';
+import { InfrabpService } from '../infrabp.service';
+import { Infrabp } from '../infrabp';
 
 @Component({
-  selector: 'app-med-list',
-  templateUrl: './med-list.component.html',
-  styleUrls: ['./med-list.component.css']
+  selector: 'app-infrabp-list',
+  templateUrl: './infrabp-list.component.html',
+  styleUrls: ['./infrabp-list.component.css']
 })
-export class MedListComponent implements OnInit {
-  meds$!: Observable<Med[]>;
+export class InfrabpListComponent implements OnInit {
+  infrabps$!: Observable<Infrabp[]>;
   selectedId = 0;
 
   constructor(
-    private service: MedService,
+    private service: InfrabpService,
     private route: ActivatedRoute
   ) {}
 
   ngOnInit() {
-    this.meds$ = this.route.paramMap.pipe(
+    this.infrabps$ = this.route.paramMap.pipe(
       switchMap(params => {
         this.selectedId = parseInt(params.get('id')!, 10);
-        return this.service.getMeds();
+        return this.service.getInfrabps();
       })
     );
   }

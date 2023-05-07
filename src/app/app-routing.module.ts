@@ -24,16 +24,6 @@ const appRoutes: Routes = [
     data: { preload: true }
   },
   {
-    path: 'meds',
-    loadChildren: () => import('./meds/meds.module').then(m => m.MedsModule),
-    data: { preload: true }
-  },
-  {
-    path: 'contacts',
-    loadChildren: () => import('./contacts/contacts.module').then(m => m.ContactsModule),
-    data: { preload: true }
-  },
-  {
     path: 'intbps',
     loadChildren: () => import('./intbps/intbps.module').then(m => m.IntbpsModule),
     data: { preload: true }
@@ -41,6 +31,11 @@ const appRoutes: Routes = [
   {
     path: 'apibps',
     loadChildren: () => import('./apibps/apibps.module').then(m => m.ApibpsModule),
+    data: { preload: true }
+  },
+  {
+    path: 'infrabps',
+    loadChildren: () => import('./infrabps/infrabps.module').then(m => m.InfrabpsModule),
     data: { preload: true }
   },
   {

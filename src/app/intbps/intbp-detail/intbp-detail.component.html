@@ -4,8 +4,8 @@
   <p>Id: {{ intbp.id }}</p>
   <label for="intbp-name">Name: </label>
   <input type="text" id="intbp-name" [(ngModel)]="intbp.name" placeholder="name"/>
-  <label for="intbp-desc">Description: </label>
-  <input type="hidden" ng-model="intbp.description">
+  <!--label for="intbp-desc">Description: </label-->
+  <!--input type="hidden" ng-model="intbp.description"-->
   <p> {{ intbp.description }} </p>
   <button type="button" (click)="gotoIntbps(intbp)">Back</button>
 </div>
