@@ -28,6 +28,6 @@ export class InfrabpDetailComponent implements OnInit {
     // Pass along the Infrabp id if available
     // so that the InfrabpList component can select that Infrabp.
     // Include a junk 'foo' property for fun.
-    this.router.navigate(['/Infrabps', {id: InfrabpId, foo: 'foo'}]);
+    this.router.navigate(['/infrabps', {id: InfrabpId, foo: 'foo'}]);
   }
 }

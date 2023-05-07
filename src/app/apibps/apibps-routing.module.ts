@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ApibpListComponent } from './apibp-list/apibp-list.component';
 import { ApibpDetailComponent } from './apibp-detail/apibp-detail.component';
+import {HeroListComponent} from "../heroes/hero-list/hero-list.component";
+import {HeroDetailComponent} from "../heroes/hero-detail/hero-detail.component";
 
 const apibpsRoutes: Routes = [
   { path: 'apibps', redirectTo: '/apibps' },

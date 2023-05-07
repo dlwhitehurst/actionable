@@ -28,6 +28,6 @@ export class ApibpDetailComponent implements OnInit {
     // Pass along the Apibp id if available
     // so that the ApibpList component can select that Apibp.
     // Include a junk 'foo' property for fun.
-    this.router.navigate(['/Apibps', {id: ApibpId, foo: 'foo'}]);
+    this.router.navigate(['/apibps', {id: ApibpId, foo: 'foo'}]);
   }
 }
